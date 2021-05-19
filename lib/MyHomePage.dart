@@ -12,7 +12,7 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text('Title of this app is $title',style: TextStyle(fontSize: 24,color: Colors.blueAccent),),
+          child: Text('Title of this app is $title',style: TextStyle(fontSize: 24,color: Colors.blue),),
         ),
       ),
       drawer: Drawer(),
