@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_starter/widgets/MyDrawer.dart';
 
 class MyHomePage extends StatelessWidget {
   final title;
@@ -15,7 +16,7 @@ class MyHomePage extends StatelessWidget {
           child: Text('Title of this app is $title',style: TextStyle(fontSize: 24,color: Colors.blue),),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
