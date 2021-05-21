@@ -31,6 +31,9 @@ class _MyHomePageState extends State<MyHomePage> {
     var products = decodedData["products"];
     CatalogModel.item =
         List.from(products).map<Item>((e) => Item.fromMap(e)).toList();
+    setState(() {
+
+    });
   }
 
   @override
@@ -44,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: SafeArea(
           child: Container(
-            padding: Vx.m32,
+            padding: Vx.m20,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

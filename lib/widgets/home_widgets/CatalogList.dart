@@ -81,6 +81,6 @@ class CatalogItem extends StatelessWidget {
           ),
         ],
       ),
-    ).color(context.cardColor).rounded.square(150).make().p16();
+    ).color(context.cardColor).rounded.square(150).make().py16();
   }
 }

@@ -34,7 +34,7 @@ class HomePageDetail extends StatelessWidget {
                   StadiumBorder(),
                 ),
               ),
-            ).wh(120, 50),
+            ).wh(130, 50),
           ],
         ).p32(),
       ),
@@ -54,22 +54,24 @@ class HomePageDetail extends StatelessWidget {
                 child: Container(
                   color: context.cardColor,
                   width: context.screenWidth,
-                  child: Column(
-                    children: [
-                      catalog.name.text.xl4
-                          .color(context.accentColor)
-                          .bold
-                          .make(),
-                      catalog.desc.text.xl
-                          .textStyle(context.captionStyle)
-                          .make(),
-                      10.heightBox,
-                      "Lorem Ipsum is simply dummy text of  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-                          .text
-                          .textStyle(context.captionStyle)
-                          .make().p16()
-                    ],
-                  ).py64(),
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        catalog.name.text.xl4
+                            .color(context.accentColor)
+                            .bold
+                            .make(),
+                        catalog.desc.text.xl
+                            .textStyle(context.captionStyle)
+                            .make(),
+                        10.heightBox,
+                        "Lorem Ipsum is simply dummy text of  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                            .text
+                            .textStyle(context.captionStyle)
+                            .make().p16()
+                      ],
+                    ).py64(),
+                  ),
                 ),
               ),
             ),
